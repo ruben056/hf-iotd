@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+    xmlns:media="http://search.yahoo.com/mrss/"
+    version="2.0"
+    xml:base="http://www.nasa.gov/" >
+
+    <channel>
+
+        <title>
+NASA Image of the Day
+        </title>
+
+        <description>
+The latest NASA &quot;Image of the Day&quot; image.
+        </description>
+
+        <link>
+http://www.nasa.gov/
+        </link>
+
+        <atom:link
+            href="http://www.nasa.gov/rss/dyn/image_of_the_day.rss"
+            rel="self" />
+
+        <language>
+en-us
+        </language>
+
+        <managingEditor>
+yvette.smith-1@nasa.gov
+        </managingEditor>
+
+        <webMaster>
+brian.dunbar@nasa.gov
+        </webMaster>
+
+        <docs>
+http://blogs.law.harvard.edu/tech/rss
+        </docs>
+
+        <item>
+
+            <title>
+Fifteen Years Ago, International Space Station Assembly Begins
+            </title>
+
+            <link>
+http://www.nasa.gov/content/fifteen-years-ago-international-space-station-assembly-begins
+            </link>
+
+            <description>
+On Dec. 6, 1998, the crew of space shuttle mission STS-88 began construction of the International Space Station, attaching the U.S.-built Unity node and the Russian-built Zarya module together in orbit. The crew carried a large-format IMAX® camera, used to take this image of Unity lifted out of Endeavour&#039;s payload bay to position it upright for connection to Zarya.
+Zarya, launched on Nov. 20, 1998, was the first piece of the International Space Station. Also known as the Functional Cargo Block (FGB), it would provide a nucleus of orientation control, communications and electrical power while the station waited for its other elements. Two weeks later, on Dec. 4, 1998, NASA&#039;s space shuttle Endeavour launched Unity, the first U.S. piece of the complex, during the STS-88 mission.
+Image Credit: NASA
+            </description>
+
+            <enclosure
+                length="6103448"
+                type="image/jpeg"
+                url="http://www.nasa.gov/sites/default/files/styles/946xvariable_height/public/s99-03777.jpg?itok=FH_zPF_7" />
+
+            <guid isPermaLink="false" >
+http://www.nasa.gov/content/fifteen-years-ago-international-space-station-assembly-begins
+            </guid>
+
+            <pubDate>
+Fri, 06 Dec 2013 12:00:00 EDT
+            </pubDate>
+
+            <source url="http://www.nasa.gov/rss/dyn/image_of_the_day.rss" >
+NASA Image of the Day
+            </source>
+        </item>
+
+        <item>
+
+            <title>
+Orion Heat Shield Transported Aboard Super Guppy Plane
+            </title>
+
+            <link>
+http://www.nasa.gov/content/orion-heat-shield-transported-aboard-super-guppy-plane
+            </link>
+
+            <description>
+The heat shield for NASA&#039;s Orion spacecraft was loaded onto a Super Guppy plane in Manchester, N.H. on Dec. 4, for transport to Kennedy Space Center in Florida. The heat shield, the largest of its kind ever built, is being unloaded Thursday, Dec. 5, and is scheduled for installation on Orion in March 2014.
+The heat shield will be used in September 2014 during Exploration Flight Test-1, a two-orbit flight that will take an uncrewed Orion capsule to an altitude of 3,600 miles. The returning capsule is expected to encounter temperatures of almost 4,000 degrees Fahrenheit as it travels through Earth&#039;s atmosphere at up to 20,000 mph, faster than any spacecraft in the last 40 years.
+Data gathered during the flight will influence decisions about design improvements on the heat shield and other Orion systems, authenticate existing computer models, and innovative new approaches to space systems and development. It also will reduce overall mission risks and costs for future Orion missions, which include exploring an asteroid and Mars.
+&gt; Read More
+Image Credit: NASA
+            </description>
+
+            <enclosure
+                length="6310811"
+                type="image/jpeg"
+                url="http://www.nasa.gov/sites/default/files/styles/946xvariable_height/public/11213141614_032f18bca5_o.jpg?itok=y7x9DLS1" />
+
+            <guid isPermaLink="false" >
+http://www.nasa.gov/content/orion-heat-shield-transported-aboard-super-guppy-plane
+            </guid>
+
+            <pubDate>
+Thu, 05 Dec 2013 12:00:00 EDT
+            </pubDate>
+
+            <source url="http://www.nasa.gov/rss/dyn/image_of_the_day.rss" >
+NASA Image of the Day
+            </source>
+        </item>
+
+        <item>
+
+            <title>
+Forty Years Ago, Pioneer 10&#039;s Closest Approach to Jupiter
+            </title>
+
+            <link>
+http://www.nasa.gov/content/forty-years-ago-pioneer-10-closest-approach-to-jupiter
+            </link>
+
+            <description>
+On Dec. 4, 1973, NASA&#039;s Pioneer 10 spacecraft sent back images of Jupiter of ever-increasing size. The most dramatic moment was after closest approach and after the spacecraft was hidden behind Jupiter. Here, images gradually build up into a very distorted crescent-shaped Jupiter. &quot;Sunrise on Jupiter,&quot; a team member said. The giant planet crescent gradually decreased in size as the spacecraft sped away out of the Jovian system.
+Launched on Mar. 2, 1972, Pioneer 10 was the first spacecraft to travel through the asteroid belt, and the first spacecraft to make direct observations and obtain close-up images of Jupiter. Pioneer 10 passed within 81,000 miles of the cloudtops during its closest encounter with Jupiter. This historic event marked humans&#039; first approach to Jupiter and opened the way for exploration of the outer solar system - for Voyager to tour the outer planets, for Ulysses to break out of the ecliptic, for Galileo to investigate Jupiter and its satellites, and for Cassini to go to Saturn and probe Titan. During its Jupiter encounter, Pioneer 10 imaged the planet and its moons, and took measurements of Jupiter&#039;s magnetosphere, radiation belts, magnetic field, atmosphere, and interior. These measurements of the intense radiation environment near Jupiter were crucial in designing the Voyager and Galileo spacecraft.
+Image Credit: NASA
+            </description>
+
+            <enclosure
+                length="424505"
+                type="image/jpeg"
+                url="http://www.nasa.gov/sites/default/files/styles/946xvariable_height/public/668761main_ac73-9341.jpg?itok=Q9A8xOG3" />
+
+            <guid isPermaLink="false" >
+http://www.nasa.gov/content/forty-years-ago-pioneer-10-closest-approach-to-jupiter
+            </guid>
+
+            <pubDate>
+Wed, 04 Dec 2013 12:00:00 EDT
+            </pubDate>
+
+            <source url="http://www.nasa.gov/rss/dyn/image_of_the_day.rss" >
+NASA Image of the Day
+            </source>
+        </item>
+
+        <item>
+
+            <title>
+View of the Transantarctic Mountains
+            </title>
+
+            <link>
+http://www.nasa.gov/content/view-of-the-transantarctic-mountains
+            </link>
+
+            <description>
+This image of the Transantarctic Mountains was taken from the NASA P-3 airborne laboratory on Nov. 27, 2013, near the end of the 2013 IceBridge Antarctic campaign.
+NASA’s Operation IceBridge images Earth&#039;s polar ice in unprecedented detail to better understand processes that connect the polar regions with the global climate system. IceBridge utilizes a highly specialized fleet of research aircraft and the most sophisticated suite of innovative science instruments ever assembled to characterize annual changes in thickness of sea ice, glaciers, and ice sheets. In addition, IceBridge collects critical data used to predict the response of earth’s polar ice to climate change and resulting sea-level rise. IceBridge also helps bridge the gap in polar observations between NASA&#039;s ICESat satellite missions.
+&gt; About IceBridge
+Image Credit: NASA / Michael Studinger
+            </description>
+
+            <enclosure
+                length="270957"
+                type="image/jpeg"
+                url="http://www.nasa.gov/sites/default/files/styles/946xvariable_height/public/transantarctic_mountains_0.jpg?itok=keMhoKaw" />
+
+            <guid isPermaLink="false" >
+http://www.nasa.gov/content/view-of-the-transantarctic-mountains
+            </guid>
+
+            <pubDate>
+Tue, 03 Dec 2013 12:00:00 EDT
+            </pubDate>
+
+            <source url="http://www.nasa.gov/rss/dyn/image_of_the_day.rss" >
+NASA Image of the Day
+            </source>
+        </item>
+
+        <item>
+
+            <title>
+Sunlit Edge of Saturn&#039;s Largest Moon, Titan
+            </title>
+
+            <link>
+http://www.nasa.gov/content/sunlit-edge-of-saturns-largest-moon-titan
+            </link>
+
+            <description>
+The sunlit edge of Titan&#039;s south polar vortex stands out distinctly against the darkness of the moon&#039;s unilluminated hazy atmosphere. The Cassini spacecraft images of the vortex led scientists to conclude that its clouds form at a much higher altitude -- where sunlight can still reach -- than the surrounding haze.
+Titan (3,200 miles, or 5,150 kilometers across) is Saturn&#039;s largest moon. This view looks toward the trailing hemisphere of Titan. North on Titan is up and rotated 32 degrees to the left. The image was taken with the Cassini spacecraft narrow-angle camera on July 14, 2013 using a spectral filter sensitive to wavelengths of near-infrared light centered at 938 nanometers.
+The view was obtained at a distance of approximately 808,000 miles (1.3 million kilometers) from Titan and at a Sun-Titan-spacecraft, or phase, angle of 82 degrees. Image scale is 5 miles (8 kilometers) per pixel.
+&gt; View a color image of the south polar vortex on Titan
+Image Credit: NASA/JPL-Caltech/Space Science Institute
+            </description>
+
+            <enclosure
+                length="162169"
+                type="image/jpeg"
+                url="http://www.nasa.gov/sites/default/files/styles/946xvariable_height/public/pia17139.jpg?itok=XEQjzDig" />
+
+            <guid isPermaLink="false" >
+http://www.nasa.gov/content/sunlit-edge-of-saturns-largest-moon-titan
+            </guid>
+
+            <pubDate>
+Mon, 02 Dec 2013 12:00:00 EDT
+            </pubDate>
+
+            <source url="http://www.nasa.gov/rss/dyn/image_of_the_day.rss" >
+NASA Image of the Day
+            </source>
+        </item>
+
+        <item>
+
+            <title>
+Black Holes Have Simple Feeding Habits
+            </title>
+
+            <link>
+http://www.nasa.gov/content/black-holes-have-simple-feeding-habits
+            </link>
+
+            <description>
+At the center of spiral galaxy M81 is a supermassive black hole about 70 million times more massive than our sun.
+	
+	A study using data from Chandra and ground-based telescopes, combined with detailed theoretical models, shows that the supermassive black hole in M81 feeds just like stellar mass black holes, with masses of only about ten times that of the sun. This discovery supports Einstein&#039;s relativity theory that states black holes of all sizes have similar properties.
+	
+	Image Credit: X-ray: NASA/CXC/Wisconsin/D.Pooley &amp; CfA/A.Zezas; Optical: NASA/ESA/CfA/A.Zezas; UV: NASA/JPL-Caltech/CfA/J.Huchra et al.; IR: NASA/JPL-Caltech/CfA
+            </description>
+
+            <enclosure
+                length="178822"
+                type="image/jpeg"
+                url="http://www.nasa.gov/sites/default/files/styles/946xvariable_height/public/253370main_image_1114_full.jpg?itok=6-7ltkGK" />
+
+            <guid isPermaLink="false" >
+http://www.nasa.gov/content/black-holes-have-simple-feeding-habits
+            </guid>
+
+            <pubDate>
+Fri, 29 Nov 2013 12:00:00 EDT
+            </pubDate>
+
+            <source url="http://www.nasa.gov/rss/dyn/image_of_the_day.rss" >
+NASA Image of the Day
+            </source>
+        </item>
+
+        <item>
+
+            <title>
+Comet ISON Streams Toward the Sun
+            </title>
+
+            <link>
+http://www.nasa.gov/content/comet-ison-streams-toward-the-sun
+            </link>
+
+            <description>
+In the early hours of Nov. 27, 2013, Comet ISON entered the field of view of the European Space Agency/NASA Solar and Heliospheric Observatory. In this picture, called a coronagraph, the bright light of the sun itself is blocked so the structures around it are visible. The comet is seen in the lower right; a giant cloud of solar material, called a coronal mass ejection or CME, is seen billowing out under the sun.
+Comet ISON, which began its trip from the Oort cloud region of our solar system, will reach its closest approach to the sun on Thanksgiving Day, skimming just 730,000 miles above the sun&#039;s surface.
+NASA is tracking Comet ISON&#039;s journey and hosting events to discuss what the public worldwide may see as the comet traverses the sun. For the latest news and information, visit www.nasa.gov/ison.
+Image Credit: ESA/NASA/SOHO
+            </description>
+
+            <enclosure
+                length="400169"
+                type="image/jpeg"
+                url="http://www.nasa.gov/sites/default/files/styles/946xvariable_height/public/20131127_0807_c3_1024_soho.jpg?itok=QZBbl70x" />
+
+            <guid isPermaLink="false" >
+http://www.nasa.gov/content/comet-ison-streams-toward-the-sun
+            </guid>
+
+            <pubDate>
+Wed, 27 Nov 2013 12:00:00 EDT
+            </pubDate>
+
+            <source url="http://www.nasa.gov/rss/dyn/image_of_the_day.rss" >
+NASA Image of the Day
+            </source>
+        </item>
+
+        <item>
+
+            <title>
+Lighting the Paths Across the U.S.
+            </title>
+
+            <link>
+http://www.nasa.gov/content/lighting-the-paths-across-the-us
+            </link>
+
+            <description>
+Thanksgiving is a time for family, for feasting, and for gratitude in the United States. It is also a time when the nation’s transportation network is clogged with travelers. According to the American Automobile Association, an estimated 43.4 million Americans will travel 50 miles (80 kilometers) or more during Thanksgiving week, with the average round trip being 600 miles (1,000 kilometers). More than 90 percent of them will use cars or trucks, while the rest will ride planes or trains.
+The United States has more roads—4.1 million miles (6.6 million kilometers)—than any other nation in the world, and roughly 40 percent more than second-ranked India. About 47,000 of those U.S. miles are part of the Interstate Highway System, established by President Dwight Eisenhower in the 1950s. The country also has 127,000 miles (204,000 kilometers) of railroad tracks and about 25,000 miles (40,000 kilometers) of navigable rivers and canals (not including the Great Lakes).
+The imprint of that transportation web becomes easier to see at night. The Visible Infrared Imaging Radiometer Suite (VIIRS) on the Suomi NPP (National Polar-orbiting Partnership) satellite acquired two nighttime images early on Oct. 1, 2013, for this natural-light, mosaic view of the continental United States. The VIIRS instrument uses a “day-night band” of wavelengths that is sensitive to low light levels and manmade light sources. The images were collected just three days before the new moon, so reflected light from space and the atmosphere was relatively low. It was also a rare night when most of the nation was cloud-free. 
+&gt; Read More
+Image Credit: NASA Earth Observatory image by Jesse Allen and Robert Simmon, using Suomi NPP VIIRS and DMSP OLS data provided courtesy of Chris Elvidge (NOAA National Geophysical Data Center)
+	Caption: Mike Carlowicz
+            </description>
+
+            <enclosure
+                length="9058430"
+                type="image/jpeg"
+                url="http://www.nasa.gov/sites/default/files/styles/946xvariable_height/public/us_vir_2013274_lrg.jpg?itok=Lwl83aib" />
+
+            <guid isPermaLink="false" >
+http://www.nasa.gov/content/lighting-the-paths-across-the-us
+            </guid>
+
+            <pubDate>
+Tue, 26 Nov 2013 12:00:00 EDT
+            </pubDate>
+
+            <source url="http://www.nasa.gov/rss/dyn/image_of_the_day.rss" >
+NASA Image of the Day
+            </source>
+        </item>
+
+        <item>
+
+            <title>
+Hubble Sees Anemic Spiral NGC 4921
+            </title>
+
+            <link>
+http://www.nasa.gov/content/hubble-sees-anemic-spiral-ngc-4921
+            </link>
+
+            <description>
+How far away is spiral galaxy NGC 4921? Although presently estimated to be about 310 million light years distant, a more precise determination could be coupled with its known recession speed to help humanity better calibrate the expansion rate of the entire visible universe. Toward this goal, several images were taken by the Hubble Space Telescope in order to help identify key stellar distance markers known as Cepheid variable stars. Since NGC 4921 is a member of the Coma Cluster of Galaxies, refining its distance would also allow a better distance determination to one of the largest nearby clusters in the local universe. The magnificent spiral NGC 4921 has been informally dubbed anemic because of its low rate of star formation and low surface brightness. Visible in the above image are, from the center, a bright nucleus, a bright central bar, a prominent ring of dark dust, blue clusters of recently formed stars, several smaller companion galaxies, unrelated galaxies in the far distant universe, and unrelated stars in our Milky Way Galaxy.
+Image Credit: Hubble Legacy Archive, ESA, NASA
+            </description>
+
+            <enclosure
+                length="8870628"
+                type="image/jpeg"
+                url="http://www.nasa.gov/sites/default/files/styles/946xvariable_height/public/ngc4921_colombari_3984.jpg?itok=HMrga8Cn" />
+
+            <guid isPermaLink="false" >
+http://www.nasa.gov/content/hubble-sees-anemic-spiral-ngc-4921
+            </guid>
+
+            <pubDate>
+Mon, 25 Nov 2013 12:00:00 EDT
+            </pubDate>
+
+            <source url="http://www.nasa.gov/rss/dyn/image_of_the_day.rss" >
+NASA Image of the Day
+            </source>
+        </item>
+
+        <item>
+
+            <title>
+Cubesats Released From Space Station
+            </title>
+
+            <link>
+http://www.nasa.gov/content/cubesats-released-from-space-station-0
+            </link>
+
+            <description>
+ISS038-E-003872 (19 Nov. 2013) --- Three nanosatellites, known as Cubesats, are deployed from a Small Satellite Orbital Deployer (SSOD) attached to the Kibo laboratory’s robotic arm at 7:10 a.m. (EST) on Nov. 19, 2013. Japan Aerospace Exploration Agency astronaut Koichi Wakata, Expedition 38 flight engineer, monitored the satellite deployment while operating the Japanese robotic arm from inside Kibo. The Cubesats were delivered to the International Space Station Aug. 9, aboard Japan’s fourth H-II Transfer Vehicle, Kounotori-4.
+Image Credit: NASA
+            </description>
+
+            <enclosure
+                length="468904"
+                type="image/jpeg"
+                url="http://www.nasa.gov/sites/default/files/styles/946xvariable_height/public/iss038e003872.jpg?itok=h3kLMBFy" />
+
+            <guid isPermaLink="false" >
+http://www.nasa.gov/content/cubesats-released-from-space-station-0
+            </guid>
+
+            <pubDate>
+Fri, 22 Nov 2013 12:00:00 EDT
+            </pubDate>
+
+            <source url="http://www.nasa.gov/rss/dyn/image_of_the_day.rss" >
+NASA Image of the Day
+            </source>
+        </item>
+    </channel>
+
+</rss>
