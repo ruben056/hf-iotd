@@ -122,7 +122,8 @@ public class MainActivity extends Activity {
 
 			@Override
 			public void onNothingSelected(AdapterView<?> arg0) {
-				// TODO Auto-generated method stub	
+				selectedItemKey = null;
+				setFields(null);	    					
 			}
 		});
     }
@@ -131,9 +132,9 @@ public class MainActivity extends Activity {
     	TextView titleView = (TextView)findViewById(R.id.imageTitle);
     	ImageView imgView = (ImageView)findViewById(R.id.imageDisplay);
     	TextView descView = (TextView)findViewById(R.id.imageDescription);
-    	titleView.setText(item.getTitle());
-    	imgView.setImageBitmap(item.getImg());
-    	descView.setText(item.getDescription());
+    	titleView.setText(item == null ? "" : item.getTitle());
+    	imgView.setImageBitmap(item == null ? null : item.getImg());
+    	descView.setText(item == null ? "" : item.getDescription());
     }
     
     @Override
