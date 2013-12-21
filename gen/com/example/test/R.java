@@ -57,6 +57,7 @@ public final class R {
     </string
          */
         public static final int refresh=0x7f050005;
+        public static final int setWallPaper=0x7f050006;
         public static final int title=0x7f050002;
     }
     public static final class style {

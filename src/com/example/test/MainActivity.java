@@ -1,11 +1,14 @@
 package com.example.test;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
+import android.app.WallpaperManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
@@ -16,20 +19,63 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
-	Map<String, IotdItem> iotdMap;
+	private Map<String, IotdItem> iotdMap;
+	private String selectedItemKey;
 	
-	class RefreshThread extends AsyncTask<Object, Integer, IotdHandler>{
+	class refreshWallPaper extends AsyncTask<IotdItem, Integer, Boolean>{
 
-		private MainActivity act;
-		public RefreshThread(MainActivity act){
+		private Activity act;
+		
+		public refreshWallPaper(Activity act){
 			this.act = act;
 		}
 		
 		@Override
+		protected Boolean doInBackground(IotdItem... arg0) {
+			try {				
+				WallpaperManager wpMgr = WallpaperManager.getInstance(this.act);
+				wpMgr.setBitmap(arg0[0].getImg());
+				return true;
+			} catch (IOException e) {			
+				e.printStackTrace();
+				return false;
+			}
+		}
+		
+		@Override
+		protected void onPostExecute(Boolean result) {
+			String msg;
+			if(result){
+				msg ="Wallpaper set";
+			}else{
+				msg ="Error setting wallpaper";
+			}
+			Toast.makeText(act, msg, Toast.LENGTH_SHORT).show();
+		}		
+	}
+	
+	class RefreshThread extends AsyncTask<Object, Integer, IotdHandler>{
+
+		private MainActivity act;
+		ProgressDialog pd;
+		public RefreshThread(MainActivity act){
+			this.act = act;			
+		}
+		
+		@Override
+		protected void onPreExecute() {
+			pd = ProgressDialog.show(act, "Loading", "Loading image of the day");
+			super.onPreExecute();
+		}
+		
+		@Override
 		protected IotdHandler doInBackground(Object... params) {
+			
+			
 			IotdHandler handler = new IotdHandler();
 	        handler.processFeed();	        
 	        return handler;
@@ -38,6 +84,7 @@ public class MainActivity extends Activity {
 		@Override
 		protected void onPostExecute(IotdHandler result) {
 			act.resetDisplay(result.getMap());
+			pd.dismiss();
 		}
 	}
 	
@@ -69,8 +116,8 @@ public class MainActivity extends Activity {
 			public void onItemSelected(AdapterView<?> arg0, View arg1,
 					int pos, long id) {
 				
-				String s = arg0.getItemAtPosition(pos).toString();
-				setFields(iotdMap.get(s));	    					
+				selectedItemKey = arg0.getItemAtPosition(pos).toString();
+				setFields(iotdMap.get(selectedItemKey));	    					
 			}
 
 			@Override
@@ -101,5 +148,8 @@ public class MainActivity extends Activity {
     	new RefreshThread(this).execute(new Object[0]);
 	}
     
+    public void onSetWallPaper(View v){    	
+    	new refreshWallPaper(this).execute(iotdMap.get(selectedItemKey));
+    }
+    
 }
-

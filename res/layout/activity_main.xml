@@ -65,6 +65,11 @@
             android:layout_height="wrap_content"            
             android:onClick="onRefresh"
             android:text="@string/refresh" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:onClick="onSetWallPaper"
+            android:text="@string/setWallPaper" />        
     </LinearLayout>
 
 </LinearLayout>
