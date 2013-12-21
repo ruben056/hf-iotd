@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         new RefreshThread(this).execute(new Object[0]);
     }
-
+    
     private void resetDisplay(Map<String, IotdItem> resultMap){
     	
     	this.iotdMap = resultMap;
@@ -94,5 +94,12 @@ public class MainActivity extends Activity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
-    }   
+    }
+        
+    /** Button actions */
+    public void onRefresh(View v) {
+    	new RefreshThread(this).execute(new Object[0]);
+	}
+    
 }
+

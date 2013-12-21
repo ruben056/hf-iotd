@@ -1,7 +1,9 @@
 package com.example.test;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.HashMap;
@@ -23,7 +25,7 @@ import android.graphics.BitmapFactory;
 @SuppressLint("NewApi")
 public class IotdHandler extends DefaultHandler {
 
-	private static String url = "http://www.nasa.gov/rss/image_of_the_day.rss";
+	private static final String url = "http://www.nasa.gov/rss/image_of_the_day.rss";
 	
 	private static String ATT_ITEM = "item";
 	private static String ATT_TITLE = "title";
@@ -41,19 +43,18 @@ public class IotdHandler extends DefaultHandler {
 	private IotdItem item;
 	
 	public void processFeed() {
-
-		try {
+		try {			
 			SAXParserFactory factory = SAXParserFactory.newInstance();
 			SAXParser parser = factory.newSAXParser();
-			XMLReader reader = parser.getXMLReader();
+			XMLReader reader = parser.getXMLReader();			
 			reader.setContentHandler(this);
 			InputStream inputStream = new URL(url).openStream();
-			reader.parse(new InputSource(inputStream));
-
+			InputSource is = new InputSource(inputStream);			
+			reader.parse(is);			
 		} catch (Exception e) {
 			e.printStackTrace();
+			throw new RuntimeException(e);
 		}
-
 	}
 
 	private Bitmap getBitmap(String url) {
@@ -89,8 +90,7 @@ public class IotdHandler extends DefaultHandler {
 		} else if (inItem) {
 			
 			if (localName.equals(ATT_ENCLOSURE)) {
-				url = attributes.getValue(ATT_URL);
-				item.setImg(getBitmap(url));
+				item.setImg(getBitmap(attributes.getValue(ATT_URL)));
 				return;
 			}
 			

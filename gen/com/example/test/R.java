@@ -42,6 +42,20 @@ public final class R {
         public static final int app_name=0x7f050000;
         public static final int date=0x7f050003;
         public static final int description=0x7f050004;
+        /**  string name="description">
+        Nbitje uitleg over die foto kqn gin kwaad anders gaat er nietmand nog ntwa van verstaan.
+    Nbitje uitleg over die foto kqn gin kwaad anders gaat er nietmand nog ntwa van verstaan.
+    Nbitje uitleg over die foto kqn gin kwaad anders gaat er nietmand nog ntwa van verstaan.
+    Nbitje uitleg over die foto kqn gin kwaad anders gaat er nietmand nog ntwa van verstaan.
+    Nbitje uitleg over die foto kqn gin kwaad anders gaat er nietmand nog ntwa van verstaan.
+    Nbitje uitleg over die foto kqn gin kwaad anders gaat er nietmand nog ntwa van verstaan.
+    Nbitje uitleg over die foto kqn gin kwaad anders gaat er nietmand nog ntwa van verstaan.
+    Nbitje uitleg over die foto kqn gin kwaad anders gaat er nietmand nog ntwa van verstaan.
+    Nbitje uitleg over die foto kqn gin kwaad anders gaat er nietmand nog ntwa van verstaan.
+    Nbitje uitleg over die foto kqn gin kwaad anders gaat er nietmand nog ntwa van verstaan.
+    Nbitje uitleg over die foto kqn gin kwaad anders gaat er nietmand nog ntwa van verstaan.    
+    </string
+         */
         public static final int refresh=0x7f050005;
         public static final int title=0x7f050002;
     }

@@ -6,6 +6,9 @@
     <string name="title">Skwone foto</string>
     <string name="date">Fri 5 2013</string>
     <string name="description">
+        Nbitje uitleg over die foto kqn gin kwaad anders gaat er nietmand nog ntwa van verstaan.    
+    </string>
+    <!-- string name="description">
         Nbitje uitleg over die foto kqn gin kwaad anders gaat er nietmand nog ntwa van verstaan.
     Nbitje uitleg over die foto kqn gin kwaad anders gaat er nietmand nog ntwa van verstaan.
     Nbitje uitleg over die foto kqn gin kwaad anders gaat er nietmand nog ntwa van verstaan.
@@ -17,7 +20,7 @@
     Nbitje uitleg over die foto kqn gin kwaad anders gaat er nietmand nog ntwa van verstaan.
     Nbitje uitleg over die foto kqn gin kwaad anders gaat er nietmand nog ntwa van verstaan.
     Nbitje uitleg over die foto kqn gin kwaad anders gaat er nietmand nog ntwa van verstaan.    
-    </string>
+    </string-->
     
     <string name="refresh">Refresh</string>
 
