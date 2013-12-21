@@ -25,10 +25,11 @@ Corrections
 (the parser from the sample in the book doesn't work, probably because the rss feed structure has changed...)
 - Used asynctask to retrieve the feed. In newer android sdk versions, you cannot do work threads on the GUI anymore.
 It was allready bad practice but now it is no longer allowed by the compiler.
+- When setting the image as a wallpaper an extra permission is required (probably net at the writing of the book): android.permission.SET_WALLPAPER
 
 
-Some extensions
-----------------
+Some extensions/enhancements
+-----------------------------
 - Not just the info of today is retrieved, info of multiple days is retrieved and then the date/Day is put in a spinner
 (or dropdownlist/combobox if you like) and the user can select the info for a particular day.
 
