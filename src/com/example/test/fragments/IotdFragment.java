@@ -1,4 +1,4 @@
-package com.example.test;
+package com.example.test.fragments;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -6,13 +6,14 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import android.app.Activity;
+import android.app.Fragment;
 import android.app.ProgressDialog;
 import android.app.WallpaperManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.view.Menu;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
@@ -21,23 +22,27 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends Activity {
+import com.example.test.R;
+import com.example.test.util.IotdHandler;
+import com.example.test.util.IotdItem;
+
+public class IotdFragment extends Fragment {
 
 	private Map<String, IotdItem> iotdMap;
 	private String selectedItemKey;
 	
 	class refreshWallPaper extends AsyncTask<IotdItem, Integer, Boolean>{
 
-		private Activity act;
+		private IotdFragment act;
 		
-		public refreshWallPaper(Activity act){
+		public refreshWallPaper(IotdFragment act){
 			this.act = act;
 		}
 		
 		@Override
 		protected Boolean doInBackground(IotdItem... arg0) {
 			try {				
-				WallpaperManager wpMgr = WallpaperManager.getInstance(this.act);
+				WallpaperManager wpMgr = WallpaperManager.getInstance(this.act.getActivity());
 				wpMgr.setBitmap(arg0[0].getImg());
 				return true;
 			} catch (IOException e) {			
@@ -54,21 +59,21 @@ public class MainActivity extends Activity {
 			}else{
 				msg ="Error setting wallpaper";
 			}
-			Toast.makeText(act, msg, Toast.LENGTH_SHORT).show();
+			Toast.makeText(getActivity(), msg, Toast.LENGTH_SHORT).show();
 		}		
 	}
 	
 	class RefreshThread extends AsyncTask<Object, Integer, IotdHandler>{
 
-		private MainActivity act;
+		private IotdFragment act;
 		ProgressDialog pd;
-		public RefreshThread(MainActivity act){
+		public RefreshThread(IotdFragment act){
 			this.act = act;			
 		}
 		
 		@Override
 		protected void onPreExecute() {
-			pd = ProgressDialog.show(act, "Loading", "Loading image of the day");
+			pd = ProgressDialog.show(getActivity(), "Loading", "Loading image of the day");
 			super.onPreExecute();
 		}
 		
@@ -87,24 +92,18 @@ public class MainActivity extends Activity {
 			pd.dismiss();
 		}
 	}
-	
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        new RefreshThread(this).execute(new Object[0]);
-    }
+
     
     private void resetDisplay(Map<String, IotdItem> resultMap){
     	
     	this.iotdMap = resultMap;
-    	Spinner dateSpinner = (Spinner)findViewById(R.id.spinner2);
+    	Spinner dateSpinner = (Spinner)getActivity().findViewById(R.id.spinner2);
     	List<String> list = new ArrayList<String>();
     	Iterator<String> it = iotdMap.keySet().iterator();
     	while(it.hasNext()){
     		list.add(it.next());
     	}
-    	ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
+    	ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(getActivity(),
     		android.R.layout.simple_spinner_item, list);
     	dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
     	dateSpinner.setAdapter(dataAdapter);
@@ -129,12 +128,20 @@ public class MainActivity extends Activity {
     }
     
     public void setFields(IotdItem item){
-    	TextView titleView = (TextView)findViewById(R.id.imageTitle);
-    	ImageView imgView = (ImageView)findViewById(R.id.imageDisplay);
-    	TextView descView = (TextView)findViewById(R.id.imageDescription);
+    	TextView titleView = (TextView)getActivity().findViewById(R.id.imageTitle);
+    	ImageView imgView = (ImageView)getActivity().findViewById(R.id.imageDisplay);
+    	TextView descView = (TextView)getActivity().findViewById(R.id.imageDescription);
     	titleView.setText(item == null ? "" : item.getTitle());
     	imgView.setImageBitmap(item == null ? null : item.getImg());
     	descView.setText(item == null ? "" : item.getDescription());
+    }
+    
+	
+/*    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        getActivity().setContentView(R.layout.activity_main);
+        new RefreshThread(this).execute(new Object[0]);
     }
     
     @Override
@@ -142,7 +149,27 @@ public class MainActivity extends Activity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
+    }*/
+    
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+    	 super.onCreate(savedInstanceState);
+         /*getActivity().setContentView(R.layout.activity_main);
+         new RefreshThread(this).execute(new Object[0]);*/
     }
+    
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    		Bundle savedInstanceState) {
+    	return inflater.inflate(R.layout.iotd_fragment, container, false);
+    }
+    
+    @Override
+    public void onStart() {
+    	super.onStart();
+    	new RefreshThread(this).execute(new Object[0]);
+    }
+    
         
     /** Button actions */
     public void onRefresh(View v) {
